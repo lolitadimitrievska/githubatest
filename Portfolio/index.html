@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Lolita Dimitrievska">
+    <meta name="description" content="This is my first web page">  
+    <title>My First Web Page</title>
+    <link rel="icon" href="html5.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="">
+    <script <a src="https://kit.fontawesome.com/6887794905.js"crossorigin="anonymous"/a></script>
+</head>
+
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img scr="ME.jpg" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <h1>Web Designer</h1>
+            <h2>Hi, I'm <span>Lolita</span><br>From Florida</h2>
+            <h3>D. <span>Lolita</span></h3>
+        </div>
+    </div>
+</div>        
+
+<!-- -----------about----------- -->
+<div id="about">
+    <div class="container" >
+        <div class="row1">
+            <div class="about-col-1">
+                <img src="Cell.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I'm Lolita Dimitrievska from Florida. Current student at www.udacity.com</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('expirience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI?UX</span><br>Designing Web/App interfaces</li>
+                        <li><span>Web Developmentt</span><br>Web app Designing</li>
+                        <li><span>App Development</span><br>Building Android/iOS apps</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="expirience" >
+                    <ul>
+                        <li><span>2023 - Current</span><br>Web Design Cours at Udacity</li>
+                        <li><span>0000 - 0000</span><br>Team lead at Star App LLC.</li>
+                        <li><span>0000 - 0000</span><br>UI/UX Design Executite at Coin Digital Ltd.</li>
+                        <li><span>0000 - 0000</span><br>Intership at ekart eCommerce.</li>            
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education" >
+                    <ul>
+                        <li><span>2023</span><br> Design Cours at Udacity</li>
+                        <li><span>0000</span><br>MBA from MIT Bangalore.</li>
+                        <li><span>0000</span><br>BBA from ISM Bangalore.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -----------services----------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <a href="https://github.com"><i class="fa-brands fa-github"></i></a>
+                <h2>Web Desing</h2>
+                <p>GitHub, Inc. is an Internet hosting service for software development and version control using Git. It provides the distributed version control of Git plus access control, bug tracking, software feature requests, task management, continuous integration, and wikis for every project.</p>
+                <a href="https://github.com">Learn more</a>
+            </div>
+            <div>
+                <a href="https://fonts.google.com/"><i class="fa-solid fa-font"></i></a>
+                <h2>Font</h2>
+                <p>A font is a particular size, weight and style of a typeface. Each font is a matched set of type, with a piece for each glyph. A typeface consists of various fonts that share an overall design.</p>
+                <a href="https://fonts.google.com/">Learn more</a>
+            </div>
+            <div>
+                <a href="https://design.google/"><i class="fab fa-app-store"></i></a>
+                <h2>App Design</h2>
+                <p>A design is a plan or specification for the construction of an object or system or for the implementation of an activity or process or the result of that plan or specification in the form of a prototype, product, or process. The verb to design expresses the process of developing a design.</p>
+                <a href="https://design.google/">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -----------portfolio----------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Comp1.jpg">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>This app connect you to the talent piople around the world.
+                    Download it from play store.</p>
+                    <a href="https://www.google.com/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Comp2.jpg">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>This app connect you to the talent piople around the world.
+                    Download it from play store.</p>
+                    <a href="https://open.spotify.com/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Comp3.jpg">
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>This app connect you to the talent piople around the world.
+                    Download it from play store.</p>
+                    <a href="https://www.shopping.com/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>    
+</div>
+<!-- ----------contact---------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>dimitrievskaloli79@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>727-645-9804</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com"><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+                    <a href="https://youtube.com"><i class="fab fa-youtube"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" download="" class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--flexbox start-->
+
+<div id="flexbox">
+    <main class="cont">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+    </main>
+</div> 
+
+<!--flebox and-->
+
+<br>
+
+    <!--card layout start-->
+
+
+    <div class="container-after">
+        <div class="row">
+            <div class="card-01"></div>
+            <div class="card-01"></div>
+            <div class="card-01"></div>
+        </div>
+        <div class="row">
+            <div class="card-02"></div>
+            <div class="card-02"></div>
+        </div>
+        <div class="row">
+            <div class="card-03"></div>
+        </div>
+    </div>
+
+
+    <!--card layout and-->
+
+    <br>
+
+    <!--table--> 
+
+<table>
+    <caption>My Daily Schedule</caption>
+    <thead>
+        <tr>
+            <th>&nbsp;</th>
+            <th scope="col">Time</th>
+            <th scope="col">Activity</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">Morning</th>
+            <td>
+                <time datetime="08:00">8am</time>-<time datetime="11:00">11am</time>
+            </td>
+            <td>Write Code</td>
+        </tr>
+        <tr>
+            <th scope="row">Break</th>
+            <td>
+                <time datetime="11:00">11am</time>-<time datetime="12:00">12pm</time>
+            </td>
+            <td>Eat Lunch</td>
+        </tr>
+        <tr>
+            <th scope="row">Afternoon</th>
+            <td>
+                <time datetime="12:00">12pm</time>-<time datetime="17:00">5pm</time>
+            </td>
+            <td>Study for Other Courses</td>
+        </tr>
+        <tr>
+            <th scope="row">Evening</th>
+            <td rowspan="2">All Other Times</td>
+            <td>Free Time</td>
+        </tr>
+        <tr>
+            <th scope="row">Night</th>
+            <td>Sleep</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="3">And that's what I do every day, 5 days a week. Just eat, sleep, code ..and
+                recharge!</td>
+        </tr>
+    </tfoot>
+</table>
+
+
+
+
+    <script src="script.js"></script>
+
+
+    
+</body>
+</html>
+
+
+
